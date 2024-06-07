@@ -6,13 +6,13 @@
  border: none; 
  outline: none; 
  scroll-behavior: smooth; 
- font-family:'Inter',sans-serif; 
+ font-family:'Inter';
  } 
  :root{ 
- --text-color:black;
- --main-color: rgb(167, 15, 167);
- --white-color: white; 
- --shadow-color: rgba(0, 0, 0,.2); 
+ --text-color:white;
+ --main-color: rgb(42, 61, 233);
+ --white-color: rgb(255, 255, 255); 
+ --shadow-color: rgba(255, 255, 255, 0.505); 
  } 
  html{ 
  font-size: 62.5%; 
@@ -32,7 +32,7 @@
  left: 0; 
  width: 100%; 
  padding: 15px 10%; 
- background-image: url(pics/b14.jpg);
+ background-image: url(pics/w4.jpg);
  box-shadow: 0 .2rem .5rem var(--shadow-color); 
  display: flex; 
  align-items: center; 
@@ -50,7 +50,7 @@
  .logo:hover{
     color: var(--main-color);
     transform: scale(1.02);
-    text-shadow: 0 .5rem 2rem var(--shadow-color); 
+    text-shadow: 0 .1rem 2rem var(--shadow-color); 
     transition: 0.3s;
  }
  .navbar a{ 
@@ -75,26 +75,26 @@
  } 
  .home{ 
  display: flex;
- background-image: url('pics/b1.jpg');
+ background-image: url('pics/w4.jpg');
+ background-size: 100% 100%;
  background-repeat: no-repeat;
  align-items: center; 
  justify-content: center;
  } 
  .home .home-content{ 
- padding-left: 40px; 
- padding-right: 40px;
- text-align: left;
+ padding-left: 30px;
+ text-align: center;
  } 
  .home-content h1{ 
- font-size: 56px; 
+ font-size: 60px; 
  font-weight: 600; 
  } 
  .home-content h4{ 
- font-size: 23px; 
+ font-size: 34px; 
  font-weight: 600; 
  } 
  .home-content p{ 
- font-size: 20px; 
+ font-size: 28px; 
  text-align: justify; 
  } 
  .home-content .socials a{ 
@@ -122,7 +122,7 @@
  padding: 1.2rem 1.8rem; 
  background: var(--main-color); 
  border-radius: .6rem; 
- box-shadow: 0 .2rem .5rem var(--shadow-color); 
+ box-shadow: 0 .2rem .5rem var(--shadow-color);
  font-size: 1.6rem; 
  color: var(--white-color); 
  letter-spacing: .1rem; 
@@ -131,25 +131,9 @@
  transition: .5s ease;
  } 
  .btn:hover{  
- border-color: black;
  transition: .5s ease;
  transform: scale(1.04);
  } 
- .image{ 
- width:350px; 
- height:300px; 
- border: 5px solid;
- border-color: var(--main-color);
- border-radius: 50%;
- padding-left:0px; 
- transition: .5s ease;
- } 
- .image:hover{
-box-shadow: 0 .1rem 2rem var(--shadow-color); 
-transform: scale(1.02); 
-transition: .5s ease;
-border-color: orange;
- }
  .container{ 
  max-width: 1100px; 
  width:100%; 
@@ -162,7 +146,7 @@ border-color: orange;
  .section-title{ 
  flex: 0 0 100%; 
  max-width: 100%; 
- border-bottom: 2px solid black;
+ border-bottom: 2px solid white;
  } 
  .section-title h2{ 
  margin-bottom: 10px; 
@@ -177,7 +161,7 @@ border-color: orange;
  color:var(--main-color) 
  }
  .about{
-    background-image: url('pics/b15.jpg');
+    background-image: url('pics/w5.jpg');
     background-size: 100% 100%;
     background-repeat: repeat;
  } 
@@ -190,7 +174,7 @@ border-color: orange;
  max-width: 100%; 
  } 
  .about .about-content .about-text h3{ 
- font-size: 22px; 
+ font-size: 26px; 
  text-align: center; 
  margin-bottom: 15px; 
  font-weight: 700; 
@@ -201,7 +185,7 @@ border-color: orange;
  align-content: center; 
  } 
  .about .about-content .about-text p{ 
- font-size: 16px; 
+ font-size: 20px; 
  line-height: 25px; 
  color: var(--text-color); 
  text-align: justify; 
@@ -223,7 +207,7 @@ border-color: orange;
  padding: 10px 0; 
  font-size: 16px; 
  color: var(--text-color); 
- border-bottom: .1px solid black; 
+ border-bottom: .1px solid white; 
  } 
  .about .about-content .personal-info .info-item p span{ 
  font-weight: 400; 
@@ -241,7 +225,7 @@ border-color: orange;
  .about .about-content .skills .skill-item h5{ 
  line-height: 40px; 
  font-weight: 600; 
- font-size: 16px; 
+ font-size: 20px; 
  color: var(--text-color); 
  text-transform: capitalize; 
  } 
@@ -269,6 +253,7 @@ border-color: orange;
  right: 0; 
  color: var(--text-color); 
  top: -40px; 
+ font-size: 16px;
  font-weight: 400; 
  line-height: 40px; 
  } 
@@ -278,11 +263,11 @@ border-color: orange;
  margin-top: 30px; 
  } 
  .about .about-content h3.title{ 
- font-size: 40px; 
+ font-size: 44px; 
  margin-bottom: 30px;  
  font-weight: 700; 
  color: var(--text-color); 
- border-bottom: 2px solid black;
+ border-bottom: 2px solid white;
  padding-bottom: 10px;
  } 
  .about .about-content .timeline-box{ 
@@ -300,14 +285,14 @@ border-color: orange;
  background-color: var(--main-color); 
  padding: 8px; 
  font-size: 16px; 
- border: 2px solid black;
+ border: 2px solid white;
  border-radius: .6em;
  } 
  .year2{ 
  background-color: var(--main-color); 
  padding: 8px; 
  font-size: 16px;
- border: 2px solid black;
+ border: 2px solid white;
  border-radius: .6em;  
  } 
  .year3{ 
@@ -326,7 +311,7 @@ border-color: orange;
  .year2e{ 
  background-color: var(--main-color); 
  margin-top: 33px; 
- border: 2px solid black; 
+ border: 2px solid white; 
  padding: 8px; 
  font-size: 16px; 
  border-radius: .6rem; 
@@ -341,7 +326,7 @@ border-color: orange;
  padding-top: 0; 
  } 
  .services{
-    background-image: url('pics/b2.jpg');
+    background-image: url('pics/w5.jpg');
  }
  .services .services-container{ 
  display: flex; 
@@ -362,10 +347,9 @@ border-color: orange;
  transition: .5s ease; 
  } 
  .services-container .services-box:hover{ 
- box-shadow: 0 .1rem 2rem var(--shadow-color);
- background-color:rgb(229, 229, 21);
+ box-shadow: 0 .2rem 4rem var(--shadow-color);
+ background-color: rgba(255, 255, 255, 0.639);
  transform: scale(1.02); 
- border-color: black;
  color: black;
  } 
  .services-box i{ 
@@ -373,8 +357,7 @@ border-color: orange;
  color: var(--main-color); 
  } 
  .services-box h3{ 
- font-size: 2.6rem; 
- transition: .5s ease; 
+ font-size: 2.6rem;  
  } 
  .services-box p{ 
  font-size: 1.6rem; 
@@ -399,7 +382,7 @@ border-color: orange;
  } 
  .projects{ 
  padding-bottom: 10rem;
- background-image: url(pics/b10.jpg); 
+ background-image: url(pics/w5.jpg); 
  background-repeat: no-repeat;
  background-size: 100%;
  } 
@@ -468,9 +451,9 @@ border-color: orange;
  } 
  .contact{ 
  color: var(--text-color); 
- background-image: url(pics/b9.jpg);
+ background-image: url(pics/w5.jpg);
  background-repeat: no-repeat;
- background-size: 100%;
+ background-size: 100% 100%;
  justify-content: center; 
  align-items: center; 
  padding: 10%; 
