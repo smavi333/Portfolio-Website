@@ -30,4 +30,4 @@ ScrollReveal({
  delay:200
 }); 
 ScrollReveal().reveal('.home-content, .section-title', {origin: 'top'}); 
-ScrollReveal().reveal('.image img, .services-container, .project-box, .contact form', {origin: 'bottom'});
+ScrollReveal().reveal('.image img, .services-container, .project-box, .contact form, .about-content', {origin: 'bottom'});
